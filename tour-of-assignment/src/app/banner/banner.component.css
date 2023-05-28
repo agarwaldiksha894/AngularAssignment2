@@ -1,0 +1,99 @@
+body, h3 {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  
+
+}
+.sale-banner--offer {
+  background: url('http://s7d2.scene7.com/is/image/Watscocom/baker-sale_20161102_sale-offer-blue-small?scl=1&qlt=100&fmt=png-alpha') no-repeat rgba(0,0,0,0);
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 40px;
+  top: 10px;
+  z-index: 10;
+  animation: slider 20s infinite linear ;
+  height: 100px;
+  width: 70%;
+  }
+
+
+
+.column img {padding-bottom:20px}
+
+/* MISC TEXT STYLES */
+
+
+
+.banner{
+  /* background-image: url("https://thumbs.dreamstime.com/z/landscape-nature-view-background-view-window-landscape-nature-view-background-view-window-wonderful-landscape-121459679.jpg"); */
+
+  background-image: url("https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg");
+  height: 500px;
+  width: 100%;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.banner__content{
+
+  background-color: wheat;
+  padding: 16px;
+  max-width: 40%;
+  /* padding-top: 10%; */
+  /* margin: 0 auto; */
+  text-align: center;
+  height: 50px;
+  margin-left: 20%;
+  /* transform: rotate(45deg); */
+  animation: mymove 5s infinite ;
+}
+
+
+
+#cloud {
+  font-family: 'Open Sans', 'sans-serif';
+    font-size: 40px;
+    content: '';
+    opacity: 1;
+    position: relative;
+    top: 20px;
+    
+    color: black;
+    animation: float 3.5s infinite ease-in-out;
+}
+
+/* #cloud {
+ 
+ 
+    animation: 2s anim-lineUp ease-out infinite;
+} */
+
+/* @keyframes float {
+  50% {
+      top: 0px;
+  }    
+  100% { 
+      top: 50px;
+  }
+} */
+
+
+@keyframes float {
+  0% {
+  /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+  transform: translatey(0px);
+  }
+  50% {
+  /* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+  transform: translatey(-20px);
+  }
+  100% {
+  /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+  transform: translatey(0px);
+  }
+  }
+
+  @keyframes mymove {
+    50% {transform: rotate(360deg);}
+  }

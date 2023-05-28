@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let header of tableHeaders" (click)="sortBy(header)">
+        {{ header }}
+        <span *ngIf="sortDirection[tableHeaders.indexOf(header)] === 'asc'">▲</span>
+        <span *ngIf="sortDirection[tableHeaders.indexOf(header)] === 'desc'">▼</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of tableData">
+      <td *ngFor="let header of tableHeaders">{{ item[header] }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,18 @@
+.div-container {
+    height: 400px;
+    overflow-y: scroll;
+    
+  }
+  
+  .div-item {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+  }
+  
