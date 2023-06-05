@@ -1,4 +1,4 @@
-<div class="div-container" (scroll)="onScroll()">
+<div style="margin-top: 5%;" class="div-container" (scroll)="onScroll()">
     <div *ngFor="let divNumber of divs" class="div-item">
       <div>{{ divNumber }}</div>
       <button (click)="onButtonClick(divNumber)">Button {{ divNumber }}</button>

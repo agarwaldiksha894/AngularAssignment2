@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimerLoggerComponent implements OnInit {
 
+  
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  //@Input() logTimestamp: string = new Date().toLocaleString();
   
   logTimestamp(action: string) {
     const timestamp = new Date().toLocaleString();

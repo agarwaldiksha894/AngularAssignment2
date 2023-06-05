@@ -1,0 +1,8 @@
+<input [(ngModel)]="duration" placeholder="Enter duration (in seconds)" />
+<!-- <button (click)="start()">Start/Pause</button>
+<button (click)="pause()">Pause</button>
+<button (click)="reset()">Reset</button> -->
+
+<button (click)="start()" [disabled]="isRunning">Start</button>
+<button (click)="pause()" [disabled]="!isRunning">Pause</button>
+<button (click)="reset()">Reset</button>

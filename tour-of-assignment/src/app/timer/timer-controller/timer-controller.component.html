@@ -1,1 +1,11 @@
-<p>timer-controller works!</p>
+
+<div class="timer-controller">
+  <label for="timer-input">Timer:</label>
+  <input type="number" id="timer-input" [(ngModel)]="timerValue">
+
+  <div class="buttons">
+    <button (click)="onStart()" [disabled]="isRunning">Start</button>
+    <button (click)="onPause()" [disabled]="!isRunning">Pause</button>
+    <button (click)="onReset()">Reset</button>
+  </div>
+</div>

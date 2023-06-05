@@ -7,6 +7,7 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
 import { TimerControllerComponent } from './timer-controller/timer-controller.component';
 import { TimerLoggerComponent } from './timer-logger/timer-logger.component';
 import { ClickCounterComponent } from './click-counter/click-counter.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ClickCounterComponent } from './click-counter/click-counter.component';
   ],
   imports: [
     CommonModule,
-    TimerRoutingModule
+    TimerRoutingModule,
+    FormsModule
   ]
 })
 export class TimerModule { }
