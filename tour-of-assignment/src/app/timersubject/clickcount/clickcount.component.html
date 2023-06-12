@@ -1,2 +1,21 @@
-<p>Click count started: {{ startClickCount }}</p>
-<p>Click count paused: {{ pauseClickCount }}</p>
+<!-- <p (click)="incrementStartCount()"   [textContent]="startClickCount">Click count started: {{ startClickCount }}</p>
+<p>Click count paused: {{ pauseClickCount }}</p> -->
+<!-- <p {{timerService.startCount}}></p> -->
+<!-- <p {{timerService.pauseCount}}></p> -->
+
+<!-- <p>Started</p><p [textContent]="timerService.startCount"></p>
+<p [textContent]="timerService.pauseCount">Paused</p>
+
+<span>Started</span>
+<span><p [textContent]="timerService.startCount"></p></span> -->
+
+<div>
+<p class="inline-paragraph">Started</p>
+<p class="inline-paragraph" [textContent]="timerService.startCount"></p>
+</div>
+
+<div>
+<p class="inline-paragraph">Paused</p>
+<p class="inline-paragraph" [textContent]="timerService.pauseCount">Paused</p>
+</div>
+

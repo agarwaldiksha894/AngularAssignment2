@@ -8,19 +8,11 @@ import { TimerService } from '../TimerService';
 })
 export class ClickcountComponent implements OnInit {
 
-  constructor(private timerService: TimerService) { }
+  constructor(public timerService: TimerService) { }
 
   ngOnInit(): void {
+
   }
 
-  startClickCount = 0;
-  pauseClickCount = 0;
-
-  incrementStartCount(): void {
-    this.startClickCount= this.timerService.getStartCount();
-  }
-
-  incrementPauseCount(): void {
-   this.pauseClickCount= this.timerService.getPauseCount();
-  }
+ 
 }

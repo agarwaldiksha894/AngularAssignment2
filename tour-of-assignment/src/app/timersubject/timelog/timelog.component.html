@@ -1,1 +1,22 @@
-<ul><li *ngFor="let timestamp of timestamps">{{ timestamp }}</li></ul>
+
+
+
+
+<!-- 
+<section *ngIf="timerService.isStarted">
+    <p *ngFor="let time of timerService.startTimeValues">started at Time: {{ time }}</p>
+  </section>
+
+  <section *ngIf="timerService.isPaused">
+    <p *ngFor="let time of timerService.pauseTimeValues">paused at Time: {{ time }}</p>
+  </section>
+
+  <section *ngIf="timerService.isReset">
+    <p *ngFor="let time of timerService.startTimeValues">reset at Time: {{ time }}</p>
+  </section> -->
+
+
+  <p *ngFor="let time of timerService.startTimeValues"> {{ time }}</p>
+  <p *ngFor="let time of timerService.pauseTimeValues"> {{ time }}</p>
+  <!-- <p *ngFor="let time of timerService.startTimeValues">reset at Time: {{ time }}</p> -->
+  

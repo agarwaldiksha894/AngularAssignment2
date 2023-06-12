@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { TimelogComponent } from './timelog/timelog.component';
 import { ClickcountComponent } from './clickcount/clickcount.component';
 
+
 @NgModule({
   declarations: [
     TimersubjectComponent,
@@ -22,6 +23,7 @@ import { ClickcountComponent } from './clickcount/clickcount.component';
     CommonModule,
     TimersubjectRoutingModule,
     FormsModule
+
   ]
 })
 export class TimersubjectModule { }

@@ -1,6 +1,9 @@
 <app-countdown-timer [timer]="timerValue"></app-countdown-timer>
 <app-timer-controller
   (startCountdown)="startCountdown($event)"
-></app-timer-controller>
+  (startCountChange)="handleStartCountChange($event)"  (pauseCountChange)="handlePauseCountChange($event)"></app-timer-controller>
+<!-- <app-timer-controller  (multipleValues)="handleMultipleValues($event)"></app-timer-controller> -->
+<!-- <app-click-counter [counterValue]="startCount"></app-click-counter> -->
+
 <app-timer-logger></app-timer-logger>
-<app-click-counter></app-click-counter>
+<app-click-counter [pauseCounterValue]="pauseCount" [startCounterValue]="startCount"></app-click-counter>

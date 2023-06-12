@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-click-counter',
@@ -12,6 +12,8 @@ export class ClickCounterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() startCounterValue: number=0;  
+  @Input() pauseCounterValue: number =0;
   startClickCount = 0;
   pauseClickCount = 0;
 
