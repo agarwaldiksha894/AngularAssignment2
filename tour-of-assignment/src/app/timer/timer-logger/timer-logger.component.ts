@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-timer-logger',
@@ -12,6 +12,9 @@ export class TimerLoggerComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input() startTimeLogs : string[] = [];
+  @Input() pauseTimeLogs : string[] = [];
 
   //@Input() logTimestamp: string = new Date().toLocaleString();
   

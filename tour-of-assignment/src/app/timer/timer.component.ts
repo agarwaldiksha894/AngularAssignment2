@@ -14,6 +14,8 @@ export class TimerComponent implements OnInit {
   timerValue: number=0;
   startCount : number =0;
   pauseCount : number =0;
+  startTimeV : any = new Date();
+  pauseTimeV: any = new Date();
   startCountdown(timer: number) {
     console.log('in startCountdown'+ this.timerValue);
     this.timerValue = timer;
@@ -39,4 +41,13 @@ export class TimerComponent implements OnInit {
     this.pauseCount = count;
   }
   
+  startTimeEventLogs(startTime : any){
+    console.log('in startTimeEventLogs')
+    console.log('startTimeEventLogs'+startTime);
+    this.startTimeV = startTime;
+  }
+
+  pauseTimeEventLogs(pauseTime : any){
+    this.pauseTimeV = pauseTime;
+  }
 }

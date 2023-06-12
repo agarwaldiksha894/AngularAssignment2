@@ -1,4 +1,7 @@
 <div class="timer-logger">
-    <p>Last Log Timestamp: {{ logTimestamp }}</p>
+    <!-- <p>{{ startTimeLogs }}</p> -->
+    <p *ngFor="let log of startTimeLogs">{{ log }}</p>
+    <p *ngFor="let log of pauseTimeLogs">{{ log }}</p>
+    
   </div>
   

@@ -14,6 +14,7 @@ export class ClickCounterComponent implements OnInit {
 
   @Input() startCounterValue: number=0;  
   @Input() pauseCounterValue: number =0;
+  
   startClickCount = 0;
   pauseClickCount = 0;
 
