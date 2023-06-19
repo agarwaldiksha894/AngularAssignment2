@@ -59,7 +59,9 @@ export class EcommerceComponent implements OnInit {
       productImage: "assets/images/comfy-gray-pants.jpg",
     }
   ];
-
+  //priceRangeRes = [...this.priceRange];
+  priceRangeRes:number[]=[];
+  uniqueCategoryRes:string[]=[];
 
   //filteredItems: Product[] = [];
   selectedCategory: string = 'All';
@@ -69,6 +71,8 @@ export class EcommerceComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.uniqueCategoryRes= this.getUniqueCategories();
+    this.priceRangeRes =this.getPriceRange();
   }
 
   filterItems(): void {

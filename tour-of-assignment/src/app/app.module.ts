@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AgGridModule } from 'ag-grid-angular';
 import { DatePipe } from '@angular/common';
 
 
@@ -14,9 +13,7 @@ import { DatePipe } from '@angular/common';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AgGridModule,
-    
+    AppRoutingModule  
     
   ],
   providers: [DatePipe],

@@ -2,7 +2,7 @@
     <label for="category">Filter by Category:</label>
     <select id="category" [(ngModel)]="selectedCategory" (ngModelChange)="filterItems()">
       <option value="All">All</option>
-      <option *ngFor="let category of getUniqueCategories()" [value]="category">{{ category }}</option>
+      <option *ngFor="let category of uniqueCategoryRes" [value]="category">{{ category }}</option>
     </select>
   </div>
 
@@ -10,7 +10,7 @@
     <label for="price">Filter by Price:</label>
     <select id="price" [(ngModel)]="selectedPrice" (ngModelChange)="filterItemsViaPrice()">
       <option value=0>All</option>
-      <option *ngFor="let priceRange of getPriceRange()" [value]="priceRange">{{ priceRange }}</option>
+      <option *ngFor="let priceRange of priceRangeRes" [value]="priceRange">{{ priceRange }}</option>
     </select>
   </div>
 

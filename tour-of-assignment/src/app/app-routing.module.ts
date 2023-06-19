@@ -21,7 +21,7 @@ loadChildren: () => import('./banner/banner.module').then(m => m.BannerModule)
 { path: 'timersubject', loadChildren: () => import('./timersubject/timersubject.module').then(m => m.TimersubjectModule) },
 {
   path: '',
-  redirectTo: '',
+  redirectTo: '/banner',
   pathMatch: 'full'
 }];
 

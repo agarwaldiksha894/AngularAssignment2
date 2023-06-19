@@ -4,18 +4,8 @@ body, h3 {
   
 
 }
-.sale-banner--offer {
-  background: url('http://s7d2.scene7.com/is/image/Watscocom/baker-sale_20161102_sale-offer-blue-small?scl=1&qlt=100&fmt=png-alpha') no-repeat rgba(0,0,0,0);
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  left: 40px;
-  top: 10px;
-  z-index: 10;
-  animation: slider 20s infinite linear ;
-  height: 100px;
-  width: 70%;
-  }
+
+
 
 
 
@@ -63,20 +53,7 @@ body, h3 {
     animation: float 3.5s infinite ease-in-out;
 }
 
-/* #cloud {
- 
- 
-    animation: 2s anim-lineUp ease-out infinite;
-} */
 
-/* @keyframes float {
-  50% {
-      top: 0px;
-  }    
-  100% { 
-      top: 50px;
-  }
-} */
 
 
 @keyframes float {
